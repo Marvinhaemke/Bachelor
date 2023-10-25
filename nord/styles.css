@@ -146,7 +146,8 @@ nav a:hover::after, nav a.active::after {
 }
 
 .service-card img {
-    width: 50px;
+    width: 100px;
+    border-radius: 50%;
     margin-bottom: 1rem;
 }
 
