@@ -206,3 +206,4 @@ nav a:hover::after, nav a.active::after {
     margin-right: 0.5rem;
     font-size: 1.2rem; /* Assuming they're font icons, adjust size here */
 }
+
