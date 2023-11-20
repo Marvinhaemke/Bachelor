@@ -1,0 +1,416 @@
+/* Grundlegende Farbvariablen */
+:root {
+    --primary-color: #e0ab1f;
+    --secondary-color: #dfc23e;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+/* Grundlegende Schriftarten und Typografie */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Überschriften-Stil */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+/* Navigationsleiste */
+.navbar {
+    background-color: var(--background-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Hero-Bereich */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/hero-image.jpg') no-repeat center center / cover;
+    color: var(--background-color);
+}
+
+/* Schaltflächen */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 15px;
+    }
+}
+/* Header */
+header {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    height: 40px; /* Höhe des Logos anpassen */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5em 1em; /* Erhöhter Abstand für Touch-Bedienung */
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: none;
+    margin-left: 1em; /* Abstand zwischen Navigationslinks und Kontakt-Button */
+}
+
+.btn-secondary:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+/* Anpassungen für kleinere Bildschirme */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: larger; /* Größere Schrift für Mobilgeräte */
+    }
+}
+/* Hero-Bereich */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('path/to/hero-image.jpg') no-repeat center center / cover;
+    color: var(--background-color);
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-section p {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.hero-section .btn-primary {
+    font-size: 1.1em;
+    padding: 12px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* AOS Animation */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* Über uns Abschnitt */
+.about-section {
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-section img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-section h3 {
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.about-section p, .about-section ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section .row {
+        flex-direction: column-reverse;
+    }
+}
+/* Vision Abschnitt */
+.vision-section {
+    padding: 50px 0;
+    background-color: var(--background-color-light); /* leichter Farbton */
+}
+
+.vision-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.vision-section .row {
+    text-align: center;
+}
+
+.vision-section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.vision-section .btn-primary {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.vision-section .btn-primary:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+/* Farbvariable hinzufügen */
+:root {
+    --background-color-light: #f8f8f8;
+}
+
+/* Leistungen Abschnitt */
+.services-section {
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+.services-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.services-section i {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.services-section h3 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-section .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+/* Testimonials Abschnitt */
+.testimonials-section {
+    padding: 50px 0;
+    background-color: var(--background-color-light);
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 70%;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.testimonial footer {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial {
+        max-width: 90%;
+    }
+}
+/* FAQ Abschnitt */
+.faq-section {
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.accordion-button {
+    background-color: var(--background-color-light);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+
+.accordion-button i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) i {
+    transform: rotate(90deg);
+}
+
+.accordion-body {
+    background-color: var(--background-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-section .accordion-button {
+        font-size: 1em;
+    }
+}
+/* Kontaktformular Abschnitt */
+.contact-section {
+    padding: 50px 0;
+    background-color: var(--background-color-light);
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-section .form-label {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.contact-section .form-label i {
+    margin-right: 10px;
+}
+
+.contact-section .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.form-feedback {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section .form-label {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+

@@ -1,0 +1,407 @@
+:root {
+    --bg-color: #5D26C1;
+    --accent-color: #FF5370;
+    --text-color: #fff;
+    --alt-text-color: #eee; /* For differentiated text like the member-role */
+    --footer-bg-color: #5D26C1; /* For footer background */
+}
+
+/* Dark & Splash Theme */
+[data-theme="dark"] {
+    --bg-color: #2E2E2E; /* Dark gray */
+    --accent-color: #A370FF; /* Muted purple */
+    --text-color: #BDBDBD; /* Light gray */
+    --alt-text-color: #999; /* Slightly darker gray */
+    --footer-bg-color: #383838; /* Slightly lighter than the main bg for differentiation */
+
+}
+
+/* Pastel Theme */
+[data-theme="pastel"] {
+    --bg-color: #AEC6CF; /* Pastel blue */
+    --accent-color: #FFB6C1; /* Pastel pink */
+    --text-color: #555;
+    --alt-text-color: #999;
+    --footer-bg-color: #D8BFD8; /* Pastel purple footer */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Using the stylish font */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+    background: linear-gradient(45deg, var(--accent-color), var(--bg-color));
+            position: fixed;
+            width: 100%;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+          
+        }
+.hamburger-menu {
+    display: none; /* Hidden by default, will show on smaller screens */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  align-self: center;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+}
+
+nav {
+    display: flex; /* Initially displayed as flex */
+}
+
+.theme-picker {
+    display: flex; /* Default display for desktop */
+}
+
+.mobile-theme-picker {
+    display: none; /* Hide by default, will be shown in the hamburger menu on mobile */
+  padding: 0 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    header {
+        flex-direction: row; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start (left) */
+        padding: 10px; /* Reduce padding for more space */
+    }
+
+    .hamburger-menu {
+      display: flex;
+        align-self: flex-end; /* Move the hamburger menu to the right */
+        margin-bottom: 10px; /* Space between the menu and the logo/nav */
+    }
+
+    .theme-picker {
+        flex-direction: row; /* Display theme buttons in a row */
+        gap: 5px; /* Reduce gap for compactness */
+    }
+
+    .theme-button {
+        padding: 3px 7px; /* Reduce padding for a more compact look */
+        font-size: 12px; /* Slightly smaller font size */
+    }
+
+    nav {
+        display: none; /* Hide navigation links by default on mobile */
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 100%; /* Place it right below the header */
+        left: 0;
+        right: 0;
+        background-color: var(--bg-color);
+        border-top: 2px solid var(--accent-color);
+        z-index: 999; /* Ensure it's above other content */
+    }
+
+    nav a {
+        padding: 10px 25px;
+    }
+
+    .logo {
+        font-size: 24px; /* Slightly smaller logo for mobile */
+    }
+  
+  .mobile-theme-picker {
+        margin-top: 15px; /* Add some spacing from the navigation links */
+        flex-direction: column; /* Stack elements vertically */
+        gap: 10px; /* Space between elements */
+    }
+
+    .mobile-theme-picker p {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .theme-button {
+        padding: 5px 10px; /* Adjust padding for a more compact look */
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    /* Hide the desktop theme picker on mobile */
+    .theme-picker {
+        display: none;
+    }
+
+    /* Show mobile theme picker on mobile */
+    .mobile-theme-picker {
+        display: flex;
+    }
+}
+.theme-picker {
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-picker p {
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.theme-button {
+    padding: 5px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    color: #fff; /* Default to white text, can adjust per theme if needed */
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Gives the text a slight shadow for better legibility */
+}
+
+.default-theme {
+    background: linear-gradient(45deg, #FF5370, #5D26C1);
+}
+
+.dark-theme {
+    background: #444; /* Dark background */
+    /* Add a small bright splash using a pseudo element or an icon if desired */
+}
+
+.pastel-theme {
+    background: linear-gradient(45deg, #AEC6CF, #FFB6C1);
+}
+
+.theme-button:hover {
+    transform: scale(1.05); /* A slight zoom on hover for interactivity */
+}
+
+        .logo {
+            font-size: 28px;
+    color: var(--text-color);            font-weight: 700;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav a {
+            margin-left: 20px;
+          margin-right: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+    border: 2px solid transparent;
+            transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+    padding: 10px 20px; 
+        }
+
+        nav a:hover {
+            background-color: var(--text-color);
+    color: var(--accent-color); /* Inverted colors on hover */
+            transform: scale(1.05);
+            border: 2px solid #FF5370;
+        }
+
+.about {
+            padding: 80px 10%; /* Ample spacing */
+            background-color: var(--bg-color); /* Vibrant purple background */
+            color: #fff; /* White text for contrast */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content */
+            gap: 30px; /* Space between elements */
+        }
+
+        .about h2 {
+            font-size: 36px; /* Larger font for the title */
+            font-weight: 700;
+            border-bottom: 3px solid #FF5370; /* Decorative underline */
+            padding-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 18px; /* Slightly larger font for readability */
+            max-width: 800px; /* Limit width for better readability */
+            text-align: center; /* Centered text */
+            line-height: 1.6; /* Improved line spacing */
+        }
+
+        .about-icon { /* Decorative icon or element */
+            width: 60px;
+            height: 60px;
+            background-color: #FF5370; /* Bright pink color */
+            border-radius: 50%; /* Circular shape */
+            display: flex;
+            align-items: center; /* Center icon or content */
+            justify-content: center;
+            margin-top: 30px; /* Space from the text */
+        }
+.team {
+            padding: 80px 10%;
+            background-color: var(--accent-color); /* Bright pink background for contrast */
+            color: #fff; /* White text for visibility */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px; /* Space between elements */
+        }
+
+        .team h2 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for now, can be adjusted */
+            gap: 30px;
+        }
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease; /* Animation on hover */
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px); /* Slight lift on hover */
+        }
+
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Circular photos */
+            background-color: #eee; /* Placeholder background */
+            margin-bottom: 15px;
+            overflow: hidden; /* For the image */
+        }
+
+        .member-name {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .member-role {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--alt-text-color); /* Slightly muted color for differentiation */
+        }
+
+        .member-bio {
+            text-align: center;
+            max-width: 250px; /* Limit width for consistency */
+            margin-top: 10px;
+        }
+.contact-form {
+            padding: 80px 10%;
+            background: linear-gradient(135deg, var(--accent-color), var(--bg-color)); /* Vibrant gradient background */
+            color: #fff; /* White text for visibility */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .contact-form h2 {
+            font-size: 40px; /* Larger font size for boldness */
+            font-weight: 700;
+        }
+
+        .contact-description {
+            font-size: 20px; /* Slightly larger font for emphasis */
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 40px; /* Space from the form */
+        }
+
+        .contact-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .contact-fields input, .contact-fields textarea {
+            padding: 15px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */
+            border: 2px solid #fff; /* White border for contrast */
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff; /* White text */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .contact-fields input:focus, .contact-fields textarea:focus {
+            background-color: rgba(255, 255, 255, 0.2); /* Slight increase in transparency on focus */
+            border-color: #FFD700; /* Gold border on focus */
+            outline: none;
+        }
+
+        .contact-fields button {
+            padding: 15px 30px;
+            background-color: #FFD700; /* Gold background */
+            color: #333; /* Dark text for contrast */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Subtle lift on hover */
+        }
+
+        .contact-fields button:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+.footer {
+            padding: 50px 10%;
+            background-color: var(--footer-bg-color); /* Vibrant purple background for continuity */
+            color: #fff; /* White text for contrast */
+            display: flex;
+            justify-content: space-between; /* Space out the columns */
+            align-items: center; /* Vertically align content */
+            gap: 30px; /* Space between columns */
+            flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-header {
+            font-size: 24px; /* Bold header size */
+            font-weight: 700;
+            margin-bottom: 15px; /* Space from the links */
+        }
+
+        .footer-link {
+            font-size: 18px; /* Slightly larger font for better visibility */
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease; /* Smooth color transition for hover effect */
+        }
+
+        .footer-link:hover {
+            color: #FF5370; /* Bright pink color on hover */
+        }
+
+        /* Optional: Add a decorative element or icon */
+        .footer-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #FF5370; /* Bright pink color */
+            border-radius: 50%; /* Circular shape */
+            display: flex;
+            align-items: center; /* Center icon or content */
+            justify-content: center;
+            margin-left: auto; /* Push to the right side */
+        }

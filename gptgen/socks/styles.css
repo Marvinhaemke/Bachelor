@@ -1,0 +1,437 @@
+/* Base CSS for Colorful Socks Website */
+
+:root {
+    --primary-color: #e63946; /* Bright red */
+    --secondary-color: #f1faee; /* Light cream */
+    --accent-color: #a8dadc; /* Soft teal */
+    --text-color: #1d3557; /* Dark blue */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif;
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: var(--accent-color);
+}
+
+section {
+    padding: 2rem 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* AOS Animation Overrides */
+[data-aos] {
+    transition-property: transform, opacity;
+}
+
+/* Header CSS */
+
+.navbar {
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-left: 20px;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("path-to-modified-hamburger-icon.png"); /* More visible icon for smaller screens */
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: var(--secondary-color);
+    }
+}
+/* Hero Section CSS */
+#hero {
+    background-image: url('hero2.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Increased opacity for readability */
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05); /* Subtle enlargement */
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+/* About Us Section CSS */
+
+#about {
+    background-color: var(--secondary-color);
+    padding: 50px 0;
+}
+
+.about-img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about-img:hover {
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#about p strong {
+    font-weight: bold;
+}
+
+#about p em {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+}
+/* Our Team Section CSS */
+
+#team {
+    background-color: var(--accent-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+/* Our Team Section CSS */
+
+#team {
+    background-color: var(--accent-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+.team-member .team-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.team-member .team-image:hover img {
+    transform: scale(1.1);
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%; /* Circular images */
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+}
+
+.member-quote {
+    font-size: 1.3rem; /* Increased font size for quotes */
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+/* Contact Form Section CSS */
+
+#contact {
+    background-color: var(--secondary-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .form-control {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+/* Footer CSS */
+
+/* Footer CSS */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 30px 0;
+}
+
+.footer-contact {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-contact a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-links a {
+    color: var(--secondary-color);
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .social-icon {
+        margin-right: 5px;
+    }
+}
+

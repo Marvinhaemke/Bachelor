@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Socks</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .hero {
+            height: 100vh;
+            background-image: url('hero.png');
+            background-size: cover;
+            background-position: top;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-theme="default">
+    <header>
+        <div class="logo">Colorful Socks</div>
+    
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#team">Our Team</a>
+            <a href="#contact">Contact</a>
+          <div class="mobile-theme-picker">
+            <p>Choose Your Style:</p>
+            <button class="theme-button default-theme" onclick="changeTheme('default')">Default</button>
+            <button class="theme-button dark-theme" onclick="changeTheme('dark')">Dark</button>
+            <button class="theme-button pastel-theme" onclick="changeTheme('pastel')">Pastel</button>
+        </div>
+        </nav>
+      <div class="theme-picker">
+    <p>Choose Your Style:</p>
+    <button class="theme-button default-theme" onclick="changeTheme('default')">Default</button>
+    <button class="theme-button dark-theme" onclick="changeTheme('dark')">Dark</button>
+    <button class="theme-button pastel-theme" onclick="changeTheme('pastel')">Pastel</button>
+</div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+
+    </header>
+
+    <div class="hero" id="home">
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-icon"> <!-- Placeholder for an icon or a decorative element -->
+            <span>CS</span> <!-- Placeholder text, you can replace this with an SVG or an image icon -->
+        </div>
+        <h2>About Us</h2>
+        <p>At Colorful Socks, we believe in making a statement - one step at a time. Founded in 2022, our core values revolve around creativity, quality, and a splash of fun in every pair!</p>
+    </div>
+
+    <div class="team" id="team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <div class="member-photo" style="background-image: url('path_to_photo1.jpg');"></div>
+                <div class="member-name">Jane Doe</div>
+                <div class="member-role">Founder</div>
+                <div class="member-bio">With a passion for color and design, Jane founded Colorful Socks to make every step lively.</div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="member-photo" style="background-image: url('path_to_photo2.jpg');"></div>
+                <div class="member-name">John Smith</div>
+                <div class="member-role">Design Lead</div>
+                <div class="member-bio">John's innovative designs have been the backbone of our vibrant collections.</div>
+            </div>
+            <!-- Add more team members similarly -->
+        </div>
+    </div>
+
+     <div class="contact-form" id="contact">
+        <h2>Business Inquiries</h2>
+        <div class="contact-description">
+            Interested in featuring our vibrant sock collections in your store? Let's collaborate!
+        </div>
+        <form action="/submit_form" method="POST" class="contact-fields">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Business Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="4"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+     <footer class="footer">
+        <div class="footer-column">
+            <div class="footer-header">Contact</div>
+            <a href="mailto:info@colorfulsocks.com" class="footer-link">info@colorfulsocks.com</a>
+            <a href="tel:+1234567890" class="footer-link">+1 (234) 567-890</a>
+        </div>
+        <div class="footer-column">
+            <div class="footer-header">Legal</div>
+            <a href="/terms-of-service" class="footer-link">Terms of Service</a>
+            <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
+        </div>
+        <!-- Optional decorative element or icon -->
+        <div class="footer-icon">
+            <span>CS</span> <!-- Placeholder text; can be replaced with an SVG or image icon -->
+        </div>
+    </footer>
+
+    <script>
+        // Add any JavaScript you need here
+        function changeTheme(theme) {
+    document.body.setAttribute('data-theme', theme);
+}
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    if (nav.style.display === 'none' || nav.style.display === '') {
+        nav.style.display = 'flex';
+    } else {
+        nav.style.display = 'none';
+    }
+});
+window.addEventListener('resize', function() {
+    const nav = document.querySelector('nav');
+    if (window.innerWidth > 768) { // Assuming 768px is the breakpoint for mobile to desktop transition
+        nav.style.display = 'flex'; // Always display navigation on desktop
+    } else {
+        nav.style.display = 'none'; // Hide on mobile until hamburger is clicked
+    }
+});
+
+    </script>
+</body>
+
+</html>

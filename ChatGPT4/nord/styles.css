@@ -13,6 +13,7 @@ header {
     background-color: #f9f9f9;  /* light gray background */
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* subtle drop shadow */
+    height: 5vh; 
 }
 
 header img {
@@ -44,12 +45,9 @@ nav a:hover::after, nav a.active::after {
 
 
 /* Hero */
-
 .hero {
-    /* Adjusting height as per feedback */
-    height: 90vh;  
-    background: url('https://images.unsplash.com/photo-1696635102393-9c3481d74a03?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTc3MTU3ODd8&ixlib=rb-4.0.3&q=85') center/cover no-repeat, 
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    height: 95vh;  
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('hero3.png') center/cover no-repeat;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -57,11 +55,6 @@ nav a:hover::after, nav a.active::after {
     flex-direction: column;
 }
 
-.hero h1, .hero p {
-    /* You can add a text-shadow to improve legibility against diverse backgrounds */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px; 
-}
 .hero h1 {
     font-size: 2.5rem;  /* Making it larger than other headers */
     margin-bottom: 1rem; /* Space between title and subtext */
@@ -70,23 +63,13 @@ nav a:hover::after, nav a.active::after {
 .hero p {
     font-size: 1.2rem;
 }
-
-/* Optional CTA styling */
-.cta-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-top: 2rem;  /* Space between subtext and button */
-    background-color: #4b17e8; /* Primary color */
-    color: white;
-    border-radius: 25px; /* Rounded edges */
-    text-decoration: none;
-    transition: background-color 0.3s; /* Smooth transition for hover */
+.hero h1, .hero p {
+    /* You can add a text-shadow to improve legibility against diverse backgrounds */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.cta-button:hover {
-    background-color: #3a0fd0; /* Slightly darker on hover for interaction feedback */
-}
 .hero-button {
+    margin-top: 20px;
     padding: 10px 20px;
     border: none;
     background-color: rgba(75, 23, 232, 0.7); /* Using the primary color with 70% opacity */
@@ -96,7 +79,6 @@ nav a:hover::after, nav a.active::after {
     transition: transform 0.3s, background-color 0.3s; /* Smooth transition effects */
     font-weight: 500; /* Slight boldness for better visibility */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for legibility */
-  margin-top: 20px; 
 }
 
 .hero-button:hover {
@@ -107,7 +89,6 @@ nav a:hover::after, nav a.active::after {
 .hero-button:active {
     transform: translateY(0); /* Reset lift effect when button is pressed */
 }
-
 
 /* Über uns */
 .about-section {
@@ -176,7 +157,8 @@ nav a:hover::after, nav a.active::after {
 }
 
 .service-card img {
-    width: 50px;
+    width: 100px;
+    border-radius: 50%;
     margin-bottom: 1rem;
 }
 
@@ -233,3 +215,4 @@ nav a:hover::after, nav a.active::after {
     font-size: 1.5rem; /* Adjust FontAwesome icon size */
     margin-right: 0.5rem;
 }
+

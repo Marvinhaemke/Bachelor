@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Socks</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a href="#" class="navbar-brand logo">
+                <img src="logo.png" alt="Sock Icon" class="logo-icon"> <!-- Sock Icon -->
+                Colorful Socks
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content" data-aos="zoom-in">
+            <h1>Life is Too Short for Boring Socks</h1>
+            <p>Discover the Colorful Way</p>
+            <a href="#about" class="btn btn-primary hero-button">Learn More</a>
+        </div>
+    </section>
+    
+    
+
+    <!-- About Us Section -->
+    <section id="about" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="hero.png" alt="Colorful Socks" class="img-fluid about-img">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Colorful Socks</h2>
+                    <p><strong>Founded in 2020,</strong> Colorful Socks is dedicated to breaking the monotony of everyday attire with vibrant and distinctive sock designs. We believe every step should be filled with color and character.</p>
+                    <p><em>Our mission</em> is to deliver high-quality, creatively designed socks that add a splash of color to our customers' lives. Sustainability and creativity are at the heart of everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Our Team Section -->
+    <section id="team" data-aos="fade-up">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="row team-row">
+                <!-- Founder -->
+                <div class="col-md-6 col-lg-3 team-member" data-aos="zoom-in">
+                    <div class="team-image">
+                        <img src="hero.png" alt="Founder, Jane Doe" class="img-fluid">
+                    </div>
+                    <h3>Jane Doe</h3>
+                    <p>Founder & Creative Head</p>
+                    <p>“Passionate about bringing color to every step you take.”</p>
+                </div>
+                <!-- Employee 1 -->
+                <div class="col-md-6 col-lg-3 team-member" data-aos="zoom-in">
+                    <div class="team-image">
+                        <img src="hero.png" alt="Founder, Jane Doe" class="img-fluid">
+                    </div>
+                    <h3>John Smith</h3>
+                    <p>Lead Designer</p>
+                    <p>“Crafting each pair with a story.”</p>
+                </div>
+                <!-- Employee 2 -->
+                <div class="col-md-6 col-lg-3 team-member" data-aos="zoom-in">
+                    <div class="team-image">
+                        <img src="hero.png" alt="Founder, Jane Doe" class="img-fluid">
+                    </div>
+                    <h3>Emily White</h3>
+                    <p>Marketing Head</p>
+                    <p>“Spreading colorful joy one sock at a time.”</p>
+                </div>
+                <!-- Employee 3 -->
+                <div class="col-md-6 col-lg-3 team-member" data-aos="zoom-in">
+                    <div class="team-image">
+                        <img src="hero.png" alt="Founder, Jane Doe" class="img-fluid">
+                    </div>
+                    <h3>Alex Green</h3>
+                    <p>Product Manager</p>
+                    <p>“Innovation in every thread.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Form -->
+    <section id="contact" data-aos="fade-up">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you're a business interested in featuring our colorful socks, let's get in touch!</p>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label visually-hidden">Your Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label visually-hidden">Your Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label visually-hidden">Your Message</label>
+                    <textarea id="message" class="form-control" placeholder="Your Message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="footer-contact">Contact us at <a href="mailto:info@colorfulsocks.com">info@colorfulsocks.com</a></p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <!-- Bootstrap JS and AOS Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
