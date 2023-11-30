@@ -103,7 +103,7 @@ footer {
 }
 
 .navbar-toggler-icon {
-    background-image: url("path-to-modified-hamburger-icon.png"); /* More visible icon for smaller screens */
+    background-image: url("hamburger-icon.png"); /* More visible icon for smaller screens */
 }
 
 @media (max-width: 992px) {
