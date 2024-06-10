@@ -1,0 +1,172 @@
+,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17
+Auto Mean,"attraktiv    5.307692
+attraktiv    3.923077
+attraktiv    5.307692
+dtype: float64","unterstützend    5.615385
+unterstützend    5.230769
+unterstützend    5.538462
+dtype: float64","einfach    5.846154
+einfach    5.307692
+einfach    5.692308
+dtype: float64","übersichtlich    6.076923
+übersichtlich    5.615385
+übersichtlich    5.538462
+dtype: float64","interessant    5.230769
+interessant    4.000000
+interessant    4.692308
+dtype: float64","neuartig    4.615385
+neuartig    3.230769
+neuartig    4.076923
+dtype: float64","attraktiv    5.307692
+attraktiv    3.923077
+attraktiv    5.307692
+dtype: float64","unterstützend    5.615385
+unterstützend    5.230769
+unterstützend    5.538462
+dtype: float64","einfach    5.846154
+einfach    5.307692
+einfach    5.692308
+dtype: float64","übersichtlich    6.076923
+übersichtlich    5.615385
+übersichtlich    5.538462
+dtype: float64","interessant    5.230769
+interessant    4.000000
+interessant    4.692308
+dtype: float64","neuartig    4.615385
+neuartig    3.230769
+neuartig    4.076923
+dtype: float64","attraktiv    5.307692
+attraktiv    3.923077
+attraktiv    5.307692
+dtype: float64","unterstützend    5.615385
+unterstützend    5.230769
+unterstützend    5.538462
+dtype: float64","einfach    5.846154
+einfach    5.307692
+einfach    5.692308
+dtype: float64","übersichtlich    6.076923
+übersichtlich    5.615385
+übersichtlich    5.538462
+dtype: float64","interessant    5.230769
+interessant    4.000000
+interessant    4.692308
+dtype: float64","neuartig    4.615385
+neuartig    3.230769
+neuartig    4.076923
+dtype: float64"
+Inter Mean,"attraktiv    4.769231
+attraktiv    4.923077
+attraktiv    5.076923
+dtype: float64","unterstützend    5.000000
+unterstützend    4.615385
+unterstützend    4.000000
+dtype: float64","einfach    6.384615
+einfach    4.307692
+einfach    4.615385
+dtype: float64","übersichtlich    5.923077
+übersichtlich    4.769231
+übersichtlich    4.923077
+dtype: float64","interessant    3.923077
+interessant    4.538462
+interessant    4.923077
+dtype: float64","neuartig    3.307692
+neuartig    4.230769
+neuartig    4.923077
+dtype: float64","attraktiv    4.769231
+attraktiv    4.923077
+attraktiv    5.076923
+dtype: float64","unterstützend    5.000000
+unterstützend    4.615385
+unterstützend    4.000000
+dtype: float64","einfach    6.384615
+einfach    4.307692
+einfach    4.615385
+dtype: float64","übersichtlich    5.923077
+übersichtlich    4.769231
+übersichtlich    4.923077
+dtype: float64","interessant    3.923077
+interessant    4.538462
+interessant    4.923077
+dtype: float64","neuartig    3.307692
+neuartig    4.230769
+neuartig    4.923077
+dtype: float64","attraktiv    4.769231
+attraktiv    4.923077
+attraktiv    5.076923
+dtype: float64","unterstützend    5.000000
+unterstützend    4.615385
+unterstützend    4.000000
+dtype: float64","einfach    6.384615
+einfach    4.307692
+einfach    4.615385
+dtype: float64","übersichtlich    5.923077
+übersichtlich    4.769231
+übersichtlich    4.923077
+dtype: float64","interessant    3.923077
+interessant    4.538462
+interessant    4.923077
+dtype: float64","neuartig    3.307692
+neuartig    4.230769
+neuartig    4.923077
+dtype: float64"
+Template Mean,"attraktiv    5.461538
+attraktiv    5.461538
+attraktiv    6.384615
+dtype: float64","unterstützend    5.000000
+unterstützend    5.692308
+unterstützend    6.000000
+dtype: float64","einfach    4.769231
+einfach    4.615385
+einfach    4.923077
+dtype: float64","übersichtlich    5.153846
+übersichtlich    5.000000
+übersichtlich    6.307692
+dtype: float64","interessant    5.153846
+interessant    5.384615
+interessant    6.153846
+dtype: float64","neuartig    4.692308
+neuartig    4.538462
+neuartig    5.230769
+dtype: float64","attraktiv    5.461538
+attraktiv    5.461538
+attraktiv    6.384615
+dtype: float64","unterstützend    5.000000
+unterstützend    5.692308
+unterstützend    6.000000
+dtype: float64","einfach    4.769231
+einfach    4.615385
+einfach    4.923077
+dtype: float64","übersichtlich    5.153846
+übersichtlich    5.000000
+übersichtlich    6.307692
+dtype: float64","interessant    5.153846
+interessant    5.384615
+interessant    6.153846
+dtype: float64","neuartig    4.692308
+neuartig    4.538462
+neuartig    5.230769
+dtype: float64","attraktiv    5.461538
+attraktiv    5.461538
+attraktiv    6.384615
+dtype: float64","unterstützend    5.000000
+unterstützend    5.692308
+unterstützend    6.000000
+dtype: float64","einfach    4.769231
+einfach    4.615385
+einfach    4.923077
+dtype: float64","übersichtlich    5.153846
+übersichtlich    5.000000
+übersichtlich    6.307692
+dtype: float64","interessant    5.153846
+interessant    5.384615
+interessant    6.153846
+dtype: float64","neuartig    4.692308
+neuartig    4.538462
+neuartig    5.230769
+dtype: float64"
+P-Value Auto-Inter,0.382196542167192,0.218975335905948,0.09289508894618836,0.7281130043136229,0.007452202035104248,0.026671538467709633,,,,,,,,,,,,
+Degrees of Freedom Auto-Inter,24.0,24.0,24.0,24.0,24.0,24.0,,,,,,,,,,,,
+P-Value Auto-Template,0.7959470619916899,0.218975335905948,0.03448550477859175,0.06175642210840421,0.8860456238748613,0.8831715960617993,,,,,,,,,,,,
+Degrees of Freedom Auto-Template,24.0,24.0,24.0,24.0,24.0,24.0,,,,,,,,,,,,
+P-Value Inter-Template,0.2123086942765662,1.0,0.0014323551519700394,0.15407928250300978,0.027048247424463337,0.011139869557937825,,,,,,,,,,,,
+Degrees of Freedom Inter-Template,24.0,24.0,24.0,24.0,24.0,24.0,,,,,,,,,,,,
