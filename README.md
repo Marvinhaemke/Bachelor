@@ -1,8 +1,7 @@
 # Bachelorarbeit Marvin Hämke
-
+<br>
+Logs der Erstellung: https://github.com/Marvinhaemke/Bachelor/blob/main/conversations.json <br><br>
 <h2>Ansatz automatische Generierung </h2>
-
-<p>
 Colorful Socks: https://marvinhaemke.github.io/Bachelor/gptgen/socks/index.html </br>
 Quellcode: [gptgen/socks](https://github.com/Marvinhaemke/Bachelor/tree/main/gptgen/socks) <br><br>
 Wäscherei Nord: https://marvinhaemke.github.io/Bachelor/gptgen/nord/index.html </br>
@@ -11,7 +10,7 @@ Immobilienmakler: https://marvinhaemke.github.io/Bachelor/gptgen/immo/index.html
 Quellcode: [gptgen/immo](https://github.com/Marvinhaemke/Bachelor/tree/main/gptgen/immo) <br><br>
 GPT: https://chatgpt.com/g/g-3oHdFJXVf-web-designer <br>
 GPT mit Actions: https://chatgpt.com/g/g-6RGEvYave-web-designer-with-actions <br>
-</p>
+
 
 <h2> Ansatz Generierung mit menschlicher Intervention </h2> 
 Colorful Socks: https://marvinhaemke.github.io/Bachelor/ChatGPT4/socks/index.html </br>
@@ -37,4 +36,4 @@ Ergebnisse: https://github.com/Marvinhaemke/Bachelor/blob/main/Ergebnisse%20Usab
 Analyse Fragebogen: https://github.com/Marvinhaemke/Bachelor/blob/main/Datenanalyse/analyse_fragebogen.py <br><br>
 Analyse Zuordnungsaufgabe: https://github.com/Marvinhaemke/Bachelor/blob/main/Datenanalyse/analyse_zuordnung.py <br><br>
 Erstellte Tabellen: https://github.com/Marvinhaemke/Bachelor/tree/main/Datenanalyse/Tabellen  <br><br>
-Erstekkte Abbildungen: https://github.com/Marvinhaemke/Bachelor/tree/main/Datenanalyse/Abbildungen  <br><br>
+Erstellte Abbildungen: https://github.com/Marvinhaemke/Bachelor/tree/main/Datenanalyse/Abbildungen  <br><br>
