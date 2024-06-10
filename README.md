@@ -30,3 +30,11 @@ Quellcode: [template/nord](https://github.com/Marvinhaemke/Bachelor/tree/main/te
 Immobilienmakler: https://marvinhaemke.github.io/Bachelor/template/immo/index.html </br>
 Quellcode: [template/immo](https://github.com/Marvinhaemke/Bachelor/tree/main/template/immo) <br><br>
 GPT: https://chatgpt.com/g/g-GBB6rJFDC-website-template-modifier
+
+<h2> Usability-Umfrage</h2>
+Umfrage: https://docs.google.com/forms/d/e/1FAIpQLSeh99IjonX1Ld-Ru8DDLmclJ2Oulh1e2vrO030-uQiUBEE-TQ/viewform <br><br>
+Ergebnisse: https://github.com/Marvinhaemke/Bachelor/blob/main/Ergebnisse%20Usability-Umfrage/Ergebnisse%20Usability-Umfrage.xlsx <br><br>
+Analyse Fragebogen: https://github.com/Marvinhaemke/Bachelor/blob/main/Datenanalyse/analyse_fragebogen.py <br><br>
+Analyse Zuordnungsaufgabe: https://github.com/Marvinhaemke/Bachelor/blob/main/Datenanalyse/analyse_zuordnung.py <br><br>
+Erstellte Tabellen: https://github.com/Marvinhaemke/Bachelor/tree/main/Datenanalyse/Tabellen  <br><br>
+Erstekkte Abbildungen: https://github.com/Marvinhaemke/Bachelor/tree/main/Datenanalyse/Abbildungen  <br><br>
