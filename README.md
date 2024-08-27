@@ -1,5 +1,6 @@
 # Bachelorarbeit Marvin Hämke
 <br>
+Bachelorarbeit: https://github.com/Marvinhaemke/Bachelor/blob/main/Bachelorarbeit%20Marvin%20H%C3%A4mke-2.pdf<br><br>
 Logs der Erstellung: https://github.com/Marvinhaemke/Bachelor/blob/main/conversations.json <br><br>
 <h2>Ansatz automatische Generierung </h2>
 Colorful Socks: https://marvinhaemke.github.io/Bachelor/gptgen/socks/index.html </br>
