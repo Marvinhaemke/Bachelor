@@ -1,6 +1,4 @@
 
-# A very simple Flask Hello World app for you to get started with...
-
 from flask import Flask, request, render_template, url_for, abort, send_file, jsonify
 from urllib.parse import quote
 from bs4 import BeautifulSoup
